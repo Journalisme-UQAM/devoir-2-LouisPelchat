@@ -1,0 +1,30 @@
+#Voici mon script pour le devoir deux. Il est incomplet mais c'est ce que j'ai réussi à faire après plusieurs heures d'essais
+#et de google intensif. Il n'est pas fonctionnel mais j'ai indentifié les variables que j'aurais insérer dans la phrase finale.
+#Je n'ai pas réussi non plus à trouver un script pour calculer le nombre de page.
+#Merci
+
+
+#coding: utf-8
+
+import csv
+
+fichier = "concordia1.csv"
+f1= open(fichier)
+lignes = csv.reader(f1)
+
+next(lignes)
+
+#Longtitre
+for ligne in lignes:
+       print(len(ligne[2]))
+
+#Type
+for ligne in lignes: 
+    if "M" in ligne[6]:
+        print("Maitrise")
+        if "T" in ligne[6]:
+            print("Doctorat")
+            
+Nom du chercheur
+for lignes in lignes:
+    print (ligne[1], ligne[0]),
